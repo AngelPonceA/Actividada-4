@@ -1,0 +1,83 @@
+/*Colores a utilizar : azul #82bfff, morado #b81fff*/
+header{
+    background: linear-gradient(to right, hwb(211 50% 0%), #b81fff);
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+/* Esto lo dejo por si te gusta más la idea */
+.nav a{
+    margin: auto 20px;
+    color: white;
+    text-decoration: none;
+}
+.nav button{
+    margin-left: 10px;
+}
+.nav{
+    padding: 14px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+
+.contenedor_galeria div{
+    padding: 10px 0px;
+}
+.galeria {
+    background: linear-gradient(to left, hwb(211 50% 0%), #d16eff);
+    display: flex;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.galeria img {
+    height: 250px;
+    width: 200px;
+}
+
+.formato-footer{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, hwb(211 50% 0%), #d16eff);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+.formato-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.formato_reg_ing div{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    align-items: center;
+    background-color: aquamarine;
+}
+.formato_reg_ing input{
+    margin-bottom: 10px;    
+    border-radius: 0.5rem;
+
+}
+.formato_reg_ing button{
+    margin-top: 5px;
+}
