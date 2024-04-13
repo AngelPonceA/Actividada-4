@@ -8,23 +8,27 @@
     <title>Grupo Cero</title>
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="assets/detalles/TemitaDeFondo.mp3" type="audio/mpeg">
-    </audio>
     <Header>
         <nav class="nav">
-            <a href="index.html">INICIO</a>
-            <a href="">CATEGORIAS</a>
-            <a href="">ARTISTAS</a>
-            <a href="">BUSCADOR</a>
+            <div class="seccion-nav">
+                <a class="item-nav" href="index.html">INICIO</a>
+                <a class="item-nav" href="">CATEGORIAS</a>
+                <a class="item-nav" href="">ARTISTAS</a>   
+            </div>
+            
+            <form class="seccion-nav buscador"> 
+                <button class="m-0 p-0" type="submit" name="busqueda"><img src="./assets/img/buscar.png" alt="buscador"></button>
+                <input class="m-0 p-0" type="text">
+            </form>
+            
+            <div class="seccion-nav">
+                <a class="boton">Registrarse</a>
+                <a class="boton">Iniciar sesión</a>
+            </div>
+            
+            
         </nav>
-        <nav class="nav">
-            <a href="registro.html">
-            <button>REGISTRAR</button>
-            <button>INGRESAR</button>
-            </a>
-        </nav>
-        </Header>
+    </Header>
     
     <Main>
 
