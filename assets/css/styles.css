@@ -308,7 +308,7 @@ h1, h2, h3, h4{
     list-style: none;
     padding: 0%;
 }
-.lista-vista h1{
+.lista-vista h2{
     font-size: xx-large;
     color: white;
 }
@@ -324,6 +324,7 @@ h1, h2, h3, h4{
 .item-lista-vista p{
     margin-bottom: 0px;
     color: white;
+    padding: 0px 10px;
 }
 .imagen-vista{
     border-radius: 2rem;
