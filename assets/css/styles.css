@@ -129,27 +129,60 @@ h1, h2, h3, h4{
 }
 
 /*----------CARRUSEL----------*/
-.carrusel {
+.carrucel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;   
+    scroll-behavior: smooth;
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .item {
-    flex: 0 0 auto;
-    width: 100%; /* Ajusta el ancho según tus necesidades */
+}
+.item-carrucel{
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%; 
     scroll-snap-align: start;
-  }
+}
+.carta-carrucel{
+    width: 100vw;
+    height: 100%;
+}
+.flechas-carrucel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.carta-carrucel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flecha-carrucel{
+    height: 100%;
+    align-content: center;
+    color: rgba(255, 255, 255, 0.171);
+    font-size: 50px;
+    transition: 0.2s ease-in-out;
+}
+.flecha-carrucel:hover{
+    color: white;
+    font-size: 50px;
+    transition: 0.2s ease-in-out;
+}
 
 
 /*----------GALERIA----------*/
-.contenedor_galeria{
+.contenedor-galeria{
     background: linear-gradient(to left,#82bfff, #b81fff);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
-.contenedor_galeria img{
+.contenedor-galeria img{
     width: 100%;
     height: 100%;
     object-fit: cover;
