@@ -183,22 +183,82 @@ h1, h2, h3, h4{
 
 /*----------GALERIA----------*/
 .contenedor-galeria{
-    background: linear-gradient(to right,#000000, #fffeff);
+    background: linear-gradient(to top,rgb(30, 30, 30), white);
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,300px));
+    justify-content: center;
 }
-.contenedor-galeria img{
+    /*-----------carta-galeria-----------*/
+.carta-galeria{
+    padding:0%;
+    margin: 20px;
+    height: 350px;
+    background-color: white;
+    
+    border: 2px solid;
+    border-color: rgb(77, 77, 77);
+    box-shadow: 0px 30px 15px 5px rgba(0, 0, 0, 0.400);
+    transition: 0.2s ease-in-out;
+
+    
+}
+.carta-galeria:hover{
+    transition: 0.2s ease;
+    transform: scale(1.05);
+    object-fit: cover;
+}
+.carta-galeria a{
+    text-decoration: none;
+    color: black;
+}
+.carta-galeria img{
     width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
 }
 
-/* FOOTER */
+.contenedor-etiquetas{
+    display: flex;
+    justify-content: center;
+}
+.etiqueta{
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: white;
+    background-color: rgb(109, 109, 109);
+    border-radius: 10px;
+    transition: 0.1s ease;
+    font-size: small;
+}
+.etiqueta:hover{
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.05);
+    
+}
+.detalle-carta{
+    margin: 0;
+    font-family:'Lucida Sans';
+    word-wrap: break-word;
+    text-align: center;
+}
+.precio-carta{
+    font-size: xx-large;
+    font-family: "Jersey 25", sans-serif;
+    text-align: center;
+}
+
+/*-----------FOOTER-----------*/
 .formato-footer{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.600);
+    background-color: rgb(30, 30, 30);
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -234,7 +294,7 @@ h1, h2, h3, h4{
 }
 
 
-/* FICHAS*/
+/*-----------FICHAS-----------*/
 .contenedor-vista{
     display: flex;
     justify-content: space-around;
